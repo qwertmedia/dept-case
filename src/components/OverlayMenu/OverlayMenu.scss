@@ -1,0 +1,25 @@
+.overlay-list {
+  list-style-type: none;
+
+  li {
+    display: flex;
+    align-items: stretch;
+
+    flex-direction: column;
+    font-family: "Verdana";
+    float: none;
+    text-align: right;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    padding: 10px 4%;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    font-size: 20px;
+  }
+}

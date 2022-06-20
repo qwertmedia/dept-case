@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+Dept Front end case by Jarmo van der Heul
+
+Instructions to run the code:
+
+Zip file: Right click on the zip file. Click Extract All. A new window will appear. Here you can use 'Browse' to determine where on the computer the extracted folder will be saved. By default this is the same place where the zip file is located. Click Extract.
+
+Download the application from https://code.visualstudio.com/download and install it on your computer.
+
+Via GitHub
+
+You can clone the Git repository to a local Map
+
+Open Visual Studio Code Go to Top Menu -> Files -> Open Folder. Select the folder where you want to download the cloned project Go to Main Menu -> View -> Integrated Terminal
+
+Run the 'git clone' command with the path to the repository you want to clone in the integrated terminal.
+
+git clone https://github.com/qwertmedia/lastfm-album.git
+
+Open the folder in Visual Studio Code Make sure you have Node.js installed. No Node? Go to Node.js and follow the instructions to install Node on your device. Open a new terminal In the terminal run the following commands: npm install, then: npm start
+
+The app opens. Open http://localhost:3000 to view in the browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
