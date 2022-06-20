@@ -14,7 +14,7 @@ Open Visual Studio Code Go to Top Menu -> Files -> Open Folder. Select the folde
 
 Run the 'git clone' command with the path to the repository you want to clone in the integrated terminal.
 
-git clone https://github.com/qwertmedia/lastfm-album.git
+git clone https://github.com/qwertmedia/dept-case.git
 
 Open the folder in Visual Studio Code Make sure you have Node.js installed. No Node? Go to Node.js and follow the instructions to install Node on your device. Open a new terminal In the terminal run the following commands: npm install, then: npm start
 
