@@ -3,7 +3,11 @@ import "./OverlayMenu.scss";
 
 const OverlayMenu = () => {
   return (
-    <div className="overlay-menu-items">
+    <div
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      className="overlay-menu-items"
+    >
       <ul className="overlay-list">
         <li>HOME</li>
         <li>WORK</li>

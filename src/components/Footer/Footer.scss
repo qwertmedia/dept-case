@@ -1,0 +1,22 @@
+footer {
+  background: #121212;
+  padding: 50px 4%;
+}
+
+.footer-menu {
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+}
+.footer-info {
+  display: flex;
+}
+
+.company-info {
+  font-size: 16px;
+  color: #808080;
+}
+.column {
+  flex: 25%;
+}
