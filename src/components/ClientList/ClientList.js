@@ -12,23 +12,23 @@ const ClientList = () => {
         challenge and inspire them to reach for the stars.
       </p>
       <div className="client-logos">
-        <div class="columns">
-          <div class="column">
+        <div className="columns">
+          <div className="column">
             <img src={logos.logo1} alt="" />
             <img src={logos.logo2} alt="" />
             <img src={logos.logo3} alt="" />
           </div>
-          <div class="column">
+          <div className="column">
             <img src={logos.logo4} alt="" />
             <img src={logos.logo5} alt="" />
             <img src={logos.logo6} alt="" />
           </div>
-          <div class="column">
+          <div className="column">
             <img src={logos.logo7} alt="" />
             <img src={logos.logo8} alt="" />
             <img src={logos.logo9} alt="" />
           </div>
-          <div class="column">
+          <div className="column">
             <img src={logos.logo10} alt="" />
             <img src={logos.logo11} alt="" />
             <img src={logos.logo12} alt="" />{" "}
