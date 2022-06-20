@@ -5,7 +5,6 @@ footer {
 
 .footer-menu {
   align-items: center;
-
   display: flex;
   flex-direction: column;
 }
@@ -19,4 +18,11 @@ footer {
 }
 .column {
   flex: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
