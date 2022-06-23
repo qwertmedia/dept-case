@@ -4,8 +4,8 @@ import logo from "./assets/deptlogo.png";
 const Footer = () => {
   return (
     <footer>
-      <div className="menu">
-        <img className="logo" src={logo} alt="deptlogo" />
+      <div className="footer-menu">
+        <img className="logo" id="footer-logo" src={logo} alt="deptlogo" />
 
         <ul>
           <li>WORK</li>
@@ -16,6 +16,7 @@ const Footer = () => {
           <li>CONTACT</li>
         </ul>
       </div>
+
       <div className="footer-info">
         <div className="column">
           <p className="company-info">Chamber of Commerce: 63464101</p>

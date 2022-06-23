@@ -11,7 +11,7 @@ import logo10 from "./assets/logo10.png";
 import logo11 from "./assets/logo11.png";
 import logo12 from "./assets/logo12.png";
 
-const logos = {
+const logos = [
   logo1,
   logo2,
   logo3,
@@ -24,6 +24,6 @@ const logos = {
   logo10,
   logo11,
   logo12,
-};
+];
 
 export default logos;

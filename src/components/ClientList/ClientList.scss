@@ -1,5 +1,6 @@
 .client-container {
   background: #121212;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 92px 32px;
@@ -7,10 +8,19 @@
 
 .client-logos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 92px 32px;
+  gap: 64px;
+  img {
+    width: 100%;
+  }
+}
+.column {
+  width: 33.3%;
 }
 
-.client {
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
 }
