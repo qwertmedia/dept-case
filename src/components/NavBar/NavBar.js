@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
+import {MdClose} from "react-icons/md"
 import "./NavBar.scss";
 
 import OverlayMenu from "../OverlayMenu/OverlayMenu";
@@ -8,33 +9,39 @@ import logo from "./assets/deptlogo.png";
 import MenuIcon from "./MenuIcon";
 
 const NavBar = () => {
+
+  const [click, setClick] = useState(false)
+
+  const handleClick = () => setClick(!click)
+
   return (
     <div className="navbar">
       <div className="logo">
         <img className="logo" src={logo} alt="deptlogo" />
       </div>
-      <ul className="nav-menu">
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li className="nav-item">
-          <a href="/">WORK</a>
+          <a className="nav-link" href="/">WORK</a>
         </li>
         <li className="nav-item">
-          <a href="/">CULTURE</a>
+          <a className="nav-link" href="/">CULTURE</a>
         </li>
         <li className="nav-item">
-          <a href="/">SERVICES</a>
+          <a className="nav-link" href="/">SERVICES</a>
         </li>
         <li className="nav-item">
-          <a href="/">INSIGHTS</a>
+          <a className="nav-link" href="/">INSIGHTS</a>
         </li>
         <li className="nav-item">
-          <a href="/">CAREERS</a>
+          <a className="nav-link" href="/">CAREERS</a>
         </li>
         <li className="nav-item">
-          <a href="/">CONTACT</a>
+          <a className="nav-link" href="/">CONTACT</a>
         </li>
       </ul>
-      <div className="hamburger">
-        <BsThreeDots />
+      <div className="hamburger" onClick={handleClick}>
+        {click ? (<MdClose className="menu-btn" size={40} style={{color: "white"}}/>) : <BsThreeDots className="menu-btn" size={40} style={{color: "white"}} /> }
+        
       </div>
     </div>
   );
