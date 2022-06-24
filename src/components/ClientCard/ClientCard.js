@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion"
 
 import clients from "./ClientData";
 import "aos/dist/aos.css";
@@ -12,6 +13,9 @@ const ClientCard = () => {
   const clientSecond = clients.slice(7, 12);
   const clientLast = clients.slice(12);
 
+ 
+  
+
   return (
     <div className="client-section">
       <div className="categorie-filter">
@@ -22,18 +26,18 @@ const ClientCard = () => {
           in <b>all industries</b>
         </h3>
       </div>
-      <div className="client-cards">
+      <div  className="client-cards">
         {clientFirst.map((client) => {
           return (
             <div className="client-item">
               <div className="img-overlay">
                 <img src={client.image} alt="clientimage" />
               </div>
-              <div className="client-info">
+              <motion.div whileHover={{scale:1.03,}} className="client-info">
                 <h1>{client.client}</h1>
                 <h2>{client.info}</h2>
                 <h4>&#x2609; Read more</h4>
-              </div>
+              </motion.div>
             </div>
           );
         })}
@@ -51,11 +55,11 @@ const ClientCard = () => {
               <div className="img-overlay">
                 <img src={client.image} alt="clientimage" />
               </div>
-              <div className="client-info">
+              <motion.div whileHover={{scale:1.03,}} className="client-info">
                 <h1>{client.client}</h1>
                 <h2>{client.info}</h2>
                 <h4>&#x2609; Read more</h4>
-              </div>
+              </motion.div>
             </div>
           );
         })}
@@ -74,11 +78,11 @@ const ClientCard = () => {
               <div className="img-overlay">
                 <img src={client.image} alt="clientimage" />
               </div>
-              <div className="client-info">
+              <motion.div whileHover={{scale:1.03,}} className="client-info">
                 <h1>{client.client}</h1>
                 <h2>{client.info}</h2>
                 <h4>&#x2609; Read more</h4>
-              </div>
+              </motion.div>
             </div>
           );
         })}
@@ -91,11 +95,11 @@ const ClientCard = () => {
               <div className="img-overlay">
                 <img src={client.image} alt="clientimage" />
               </div>
-              <div className="client-info">
+              <motion.div whileHover={{scale:1.03,}} className="client-info">
                 <h1>{client.client}</h1>
                 <h2>{client.info}</h2>
                 <h4>&#x2609; Read more</h4>
-              </div>
+              </motion.div>
             </div>
           );
         })}
