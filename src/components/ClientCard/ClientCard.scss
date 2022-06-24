@@ -75,6 +75,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .categorie-filter {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #ffff;
+    }
+  }
+
   .client-cards > div {
     flex: 100%;
   }
